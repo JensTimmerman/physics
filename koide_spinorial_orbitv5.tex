@@ -125,7 +125,6 @@ Section~\ref{sec:koide_algebraic} gives the purely algebraic proof that $Q = 2/3
 $\rhoc = \sqrt{2}$.
 Section~\ref{sec:discrete} presents the discrete $\mathbb{Z}_3$ formulation.
 Section~\ref{sec:topology} discusses the topological node transition.
-Section~\ref{sec:cp2} sketches the $\CP^2$ embedding.
 Section~\ref{sec:discussion} discusses open questions and experimental predictions.
 
 %% ─────────────────────────────────────────────────────────────────────────────
@@ -299,21 +298,13 @@ between uniform and modulated components of the orbit at fixed total kinetic wei
 rather than a trivial overall rescaling of the field amplitude.
 \subsection{Kinetic term}
 
-Differentiating~\eqref{eq:psi_cl}:
-\begin{equation}
-  \partial_\phi\psicl(\phi)
-  \;=\; \frac{i\mu}{2}\!\left(a\,e^{i\phi/2} - b\,e^{-i\phi/2}\right).
-\end{equation}
-Hence
-\begin{equation}
-  \label{eq:kinetic}
-  \int_0^{4\pi}|\partial_\phi\psicl|^2\,d\phi
-  \;=\; \frac{\mu^2}{4}\int_0^{4\pi}\!\bigl(|a|^2+|b|^2\bigr)\,d\phi
-  \;=\; \frac{\mu^2}{4}\cdot 4\pi \;=\; \pi\mu^2\,.
-\end{equation}
-The kinetic contribution is \emph{independent of $\rho$} and drops out of
-$F(\rho) = \Scl(\rho)-\Scl(0)$.
-
+After absorbing the normalisation factor $\sqrt{(1+\rho^2)/2}$
+into $\mu$, the properly normalised background satisfies
+$|a|^2 + |b|^2 = 1$ by construction, giving
+\[
+\int_0^{4\pi}|\partial_\phi\psi_{\rm cl}|^2\,d\phi
+\;=\; \frac{\mu^2}{4} \cdot 4\pi \;=\; \pi\mu^2.
+\]
 \subsection{Potential integrals — explicit computation}
 
 We need two families of integrals.
@@ -1073,7 +1064,7 @@ a structural consequence of three geometric facts acting in concert:
         $\sum\sqrt{m_n}$ to be $\rho$-independent, leaving $Q$ as a pure function
         of $\rho^2$.
   \item The infrared RG fixed point of the effective Landau dynamics is $\rho = \sqrt{2}$,
-        the unique equipartition point compatible with orbit coherence, giving $Q = 2/3$.
+        the unique equipartition point compatible with orbit coherence, giving $\Rightarrow \quad Q = \frac{2}{3}$.
 \end{enumerate}
 
 \[
